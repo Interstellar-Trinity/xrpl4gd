@@ -24,3 +24,10 @@ func _Peer_Connected(player_id):
 
 func _Peer_Disconnected(player_id):
 	print ("User " + str(player_id) + " has disconnected") 
+	
+	
+remote func FetchSkillDamage(skill_name, requestor):
+	var player_id = get_tree().get_rpc_sender_id()
+	var damage = get_node("Combat").FetchSkillDamage[skill_name]
+	rpc_id(player_id, "ReturnSkillData", damage, requestor)
+	print("Sending " + str(damage) + " to player")
