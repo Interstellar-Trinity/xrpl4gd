@@ -55,6 +55,9 @@ func _on_data():
 	var parsedMessage = JSON.parse(message)
 	if parsedMessage.result.type == "transaction":
 		print(parsedMessage.result.transaction.TransactionType)
+		if parsedMessage.result.transaction.TransactionType == "NFTokenAcceptOffer":
+			print("Offer Accepted!")
+			## Logic for emitting an event that changes the client goes here
 		if parsedMessage.result.transaction.TransactionType == "NFTokenCreateOffer":
 			var affectedNodes = parsedMessage.result.meta.AffectedNodes
 			print("Offer Made!")

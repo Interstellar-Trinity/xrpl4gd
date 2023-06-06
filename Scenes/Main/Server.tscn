@@ -5,6 +5,9 @@
 [ext_resource path="res://Scenes/PlayerVerification.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/IssuerWebsocket.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/MintAndOfferCallout.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ServerData.gd" type="Script" id=1]
+[ext_resource path="res://IssuerWebsocket.gd" type="Script" id=2]
+[ext_resource path="res://MintAndOfferCallout.gd" type="Script" id=3]
 
 [node name="Server" type="Node"]
 script = ExtResource( 1 )

@@ -1,0 +1,91 @@
+[gd_scene format=2]
+
+[node name="VBoxContainer" type="VBoxContainer"]
+margin_right = 1020.0
+margin_bottom = 600.0
+
+[node name="Wallet Address Label" type="Label" parent="."]
+margin_right = 1020.0
+margin_bottom = 14.0
+text = "Input Wallet Address Below:"
+
+[node name="Wallet Address LineEdit" type="LineEdit" parent="."]
+margin_top = 18.0
+margin_right = 1020.0
+margin_bottom = 42.0
+
+[node name="Get Stats Button" type="Button" parent="."]
+margin_top = 46.0
+margin_right = 1020.0
+margin_bottom = 66.0
+text = "Get Stats"
+
+[node name="Wallet Stats Label" type="Label" parent="."]
+margin_top = 70.0
+margin_right = 1020.0
+margin_bottom = 84.0
+text = "Wallet Stats"
+
+[node name="Funds HBox" type="HBoxContainer" parent="."]
+margin_top = 88.0
+margin_right = 1020.0
+margin_bottom = 112.0
+
+[node name="Funds" type="Label" parent="Funds HBox"]
+margin_top = 5.0
+margin_right = 42.0
+margin_bottom = 19.0
+text = "Funds:"
+
+[node name="Funds LineEdit" type="LineEdit" parent="Funds HBox"]
+margin_left = 46.0
+margin_right = 104.0
+margin_bottom = 24.0
+
+[node name="NFT Count HBox" type="HBoxContainer" parent="."]
+margin_top = 116.0
+margin_right = 1020.0
+margin_bottom = 140.0
+
+[node name="Number of NFTs" type="Label" parent="NFT Count HBox"]
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 19.0
+text = "Number of NFTs:"
+
+[node name="NFT Count LineEdit" type="LineEdit" parent="NFT Count HBox"]
+margin_left = 111.0
+margin_right = 169.0
+margin_bottom = 24.0
+
+[node name="Trustline Count HBox" type="HBoxContainer" parent="."]
+margin_top = 144.0
+margin_right = 1020.0
+margin_bottom = 168.0
+
+[node name="Number of Trustlines" type="Label" parent="Trustline Count HBox"]
+margin_top = 5.0
+margin_right = 139.0
+margin_bottom = 19.0
+text = "Number of Trustlines:"
+
+[node name="Trustline Count LineEdit" type="LineEdit" parent="Trustline Count HBox"]
+margin_left = 143.0
+margin_right = 201.0
+margin_bottom = 24.0
+
+[node name="isXUMMPro" type="HBoxContainer" parent="."]
+margin_top = 172.0
+margin_right = 1020.0
+margin_bottom = 196.0
+
+[node name="XUMM Pro Status" type="Label" parent="isXUMMPro"]
+margin_top = 5.0
+margin_right = 114.0
+margin_bottom = 19.0
+text = "XUMM Pro Status:"
+
+[node name="XUMM Pro LineEdit" type="LineEdit" parent="isXUMMPro"]
+margin_left = 118.0
+margin_right = 176.0
+margin_bottom = 24.0
