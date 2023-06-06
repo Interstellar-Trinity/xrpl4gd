@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 ServerData="*res://ServerData.gd"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/xrpl4gd/plugin.cfg" )

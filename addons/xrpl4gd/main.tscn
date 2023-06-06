@@ -1,34 +1,39 @@
 [gd_scene format=2]
 
 [node name="VBoxContainer" type="VBoxContainer"]
-margin_right = 1020.0
-margin_bottom = 600.0
+anchor_left = 0.189453
+anchor_top = 0.165
+anchor_right = 0.810547
+anchor_bottom = 0.835
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Wallet Address Label" type="Label" parent="."]
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 14.0
 text = "Input Wallet Address Below:"
 
 [node name="Wallet Address LineEdit" type="LineEdit" parent="."]
 margin_top = 18.0
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 42.0
 
 [node name="Get Stats Button" type="Button" parent="."]
 margin_top = 46.0
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 66.0
 text = "Get Stats"
 
 [node name="Wallet Stats Label" type="Label" parent="."]
 margin_top = 70.0
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 84.0
 text = "Wallet Stats"
 
 [node name="Funds HBox" type="HBoxContainer" parent="."]
 margin_top = 88.0
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 112.0
 
 [node name="Funds" type="Label" parent="Funds HBox"]
@@ -44,7 +49,7 @@ margin_bottom = 24.0
 
 [node name="NFT Count HBox" type="HBoxContainer" parent="."]
 margin_top = 116.0
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 140.0
 
 [node name="Number of NFTs" type="Label" parent="NFT Count HBox"]
@@ -60,7 +65,7 @@ margin_bottom = 24.0
 
 [node name="Trustline Count HBox" type="HBoxContainer" parent="."]
 margin_top = 144.0
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 168.0
 
 [node name="Number of Trustlines" type="Label" parent="Trustline Count HBox"]
@@ -76,7 +81,7 @@ margin_bottom = 24.0
 
 [node name="isXUMMPro" type="HBoxContainer" parent="."]
 margin_top = 172.0
-margin_right = 1020.0
+margin_right = 636.0
 margin_bottom = 196.0
 
 [node name="XUMM Pro Status" type="Label" parent="isXUMMPro"]
