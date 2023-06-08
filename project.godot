@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "WalletStats",
+"language": "GDScript",
+"path": "res://addons/xrpl4gd/wallet-stats.gd"
+} ]
+_global_script_class_icons={
+"WalletStats": ""
+}
+
 [application]
 
 config/name="GameServer"
