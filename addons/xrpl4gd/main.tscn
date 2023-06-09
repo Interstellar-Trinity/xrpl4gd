@@ -22,22 +22,16 @@ margin_top = 18.0
 margin_right = 636.0
 margin_bottom = 42.0
 
-[node name="Get Stats Button" type="Button" parent="."]
+[node name="Wallet Stats Label" type="Label" parent="."]
 margin_top = 46.0
 margin_right = 636.0
-margin_bottom = 66.0
-text = "Get Stats"
-
-[node name="Wallet Stats Label" type="Label" parent="."]
-margin_top = 70.0
-margin_right = 636.0
-margin_bottom = 84.0
+margin_bottom = 60.0
 text = "Wallet Stats"
 
 [node name="Funds HBox" type="HBoxContainer" parent="."]
-margin_top = 88.0
+margin_top = 64.0
 margin_right = 636.0
-margin_bottom = 112.0
+margin_bottom = 88.0
 
 [node name="Funds" type="Label" parent="Funds HBox"]
 margin_top = 5.0
@@ -51,9 +45,9 @@ margin_right = 104.0
 margin_bottom = 24.0
 
 [node name="NFT Count HBox" type="HBoxContainer" parent="."]
-margin_top = 116.0
+margin_top = 92.0
 margin_right = 636.0
-margin_bottom = 140.0
+margin_bottom = 116.0
 
 [node name="Number of NFTs" type="Label" parent="NFT Count HBox"]
 margin_top = 5.0
@@ -67,9 +61,9 @@ margin_right = 169.0
 margin_bottom = 24.0
 
 [node name="Trustline Count HBox" type="HBoxContainer" parent="."]
-margin_top = 144.0
+margin_top = 120.0
 margin_right = 636.0
-margin_bottom = 168.0
+margin_bottom = 144.0
 
 [node name="Number of Trustlines" type="Label" parent="Trustline Count HBox"]
 margin_top = 5.0
@@ -83,9 +77,9 @@ margin_right = 201.0
 margin_bottom = 24.0
 
 [node name="isXUMMPro" type="HBoxContainer" parent="."]
-margin_top = 172.0
+margin_top = 148.0
 margin_right = 636.0
-margin_bottom = 196.0
+margin_bottom = 172.0
 
 [node name="XUMM Pro Status" type="Label" parent="isXUMMPro"]
 margin_top = 5.0
@@ -97,3 +91,9 @@ text = "XUMM Pro Status:"
 margin_left = 118.0
 margin_right = 176.0
 margin_bottom = 24.0
+
+[node name="Get Stats Button" type="Button" parent="."]
+margin_top = 176.0
+margin_right = 636.0
+margin_bottom = 196.0
+text = "Get Stats"
