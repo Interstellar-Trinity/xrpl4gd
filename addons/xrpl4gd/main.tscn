@@ -41,8 +41,9 @@ text = "Funds:"
 
 [node name="Funds LineEdit" type="LineEdit" parent="Funds HBox"]
 margin_left = 46.0
-margin_right = 104.0
+margin_right = 636.0
 margin_bottom = 24.0
+size_flags_horizontal = 3
 
 [node name="NFT Count HBox" type="HBoxContainer" parent="."]
 margin_top = 92.0
@@ -57,8 +58,9 @@ text = "Number of NFTs:"
 
 [node name="NFT Count LineEdit" type="LineEdit" parent="NFT Count HBox"]
 margin_left = 111.0
-margin_right = 169.0
+margin_right = 636.0
 margin_bottom = 24.0
+size_flags_horizontal = 3
 
 [node name="Trustline Count HBox" type="HBoxContainer" parent="."]
 margin_top = 120.0
@@ -73,8 +75,9 @@ text = "Number of Trustlines:"
 
 [node name="Trustline Count LineEdit" type="LineEdit" parent="Trustline Count HBox"]
 margin_left = 143.0
-margin_right = 201.0
+margin_right = 636.0
 margin_bottom = 24.0
+size_flags_horizontal = 3
 
 [node name="isXUMMPro" type="HBoxContainer" parent="."]
 margin_top = 148.0
@@ -89,8 +92,9 @@ text = "XUMM Pro Status:"
 
 [node name="XUMM Pro LineEdit" type="LineEdit" parent="isXUMMPro"]
 margin_left = 118.0
-margin_right = 176.0
+margin_right = 636.0
 margin_bottom = 24.0
+size_flags_horizontal = 3
 
 [node name="Get Stats Button" type="Button" parent="."]
 margin_top = 176.0
