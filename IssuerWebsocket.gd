@@ -67,7 +67,7 @@ func _on_data():
 				if (element.keys()[0] == "CreatedNode"):
 					if (element.CreatedNode.LedgerEntryType == "NFTokenOffer"):
 						print("Found the NFTokenOfferId")
-						node2 = get_node("../Node2")
+						node2 = get_node("../MintAndOfferCallout")
 						node2.onCall(element.CreatedNode.LedgerIndex)
 
 func _process(delta):
