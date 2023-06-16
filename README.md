@@ -31,7 +31,7 @@ NFTs can be used for exclusive access to content or other scarce items. If the N
 
 # ToweRPG_Server
 
-Process the game logic for ToweRPG. Can be roughly segmented into several broad categories. Gameplay, Databasing and XRPL Integrations. The xrpl4gd plugin and the backend for the demo will eventually be split out into different repos.
+Process the game logic for ToweRPG. Can be roughly segmented into several broad categories. Gameplay, Databasing and XRPL Integrations. The xrpl4gd plugin and the server for the demo will eventually be split out into different repos.
 
 ## Gameplay
 Placeholder to describe core gameplay systems and client/server communication
