@@ -47,14 +47,16 @@ remote func FetchPlayerStats():
 
 # This function is triggered by the player clicking the "Test Mint" button
 remote func MintNft():
+	print("I made it here")
 	$MintAndOfferCallout._on_Button_pressed()
 
 
 # This function should fire when the XUMM push request is generated
 func OfferNft():
+	
 	var player_id = get_tree().get_rpc_sender_id()
+	print ("Offer extended to " + str(player_id))	
 	rpc_id (player_id, "OfferNft")
-	print ("Offer extended to " + str(player_id))
 
 
 # This will trigger the weapon change in the client

@@ -3,6 +3,7 @@ extends Node
 # The URL we will connect to
 export var websocket_url = "wss://s.devnet.rippletest.net:51233/"
 var node2
+var node3
 
 # Our WebSocketClient instance
 var _client = WebSocketClient.new()
@@ -69,6 +70,7 @@ func _on_data():
 						print("Found the NFTokenOfferId")
 						node2 = get_node("../MintAndOfferCallout")
 						node2.onCall(element.CreatedNode.LedgerIndex)
+						##get_parent().OfferNft()
 
 func _process(delta):
 	# Call this in _process or _physics_process. Data transfer, and signals
