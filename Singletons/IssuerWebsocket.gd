@@ -43,6 +43,8 @@ func _connected(proto = ""):
 	print(connectIssuer)
 	_client.get_peer(1).put_packet(connectIssuer.to_utf8())
 
+
+
 func _on_data():
 	# Print the received packet, you MUST always use get_peer(1).get_packet
 	# to receive data from server, and not get_packet directly when not
@@ -57,7 +59,7 @@ func _on_data():
 		print(parsedMessage.result.transaction.TransactionType)
 		if parsedMessage.result.transaction.TransactionType == "NFTokenAcceptOffer":
 			print("Offer Accepted!")
-			## Logic for emitting an event that changes the client goes here
+			#add in the function to change the player's weapon here
 		if parsedMessage.result.transaction.TransactionType == "NFTokenCreateOffer":
 			var affectedNodes = parsedMessage.result.meta.AffectedNodes
 			print("Offer Made!")
@@ -67,8 +69,9 @@ func _on_data():
 				if (element.keys()[0] == "CreatedNode"):
 					if (element.CreatedNode.LedgerEntryType == "NFTokenOffer"):
 						print("Found the NFTokenOfferId")
-						node2 = get_node("../MintAndOfferCallout")
-						node2.onCall(element.CreatedNode.LedgerIndex)
+						#push to XUMM Wallet
+						get_parent().onCall(element.CreatedNode.LedgerIndex)
+
 
 func _process(delta):
 	# Call this in _process or _physics_process. Data transfer, and signals
