@@ -2,7 +2,7 @@ extends Node
 
 # The URL we will connect to
 export var websocket_url = "wss://s.devnet.rippletest.net:51233/"
-var MintAndOfferCallout
+var node2
 
 # Our WebSocketClient instance
 var _client = WebSocketClient.new()
@@ -69,9 +69,8 @@ func _on_data():
 				if (element.keys()[0] == "CreatedNode"):
 					if (element.CreatedNode.LedgerEntryType == "NFTokenOffer"):
 						print("Found the NFTokenOfferId")
-						MintAndOfferCallout = get_node("/MintAndOfferCallout")
 						#push to XUMM Wallet
-						MintAndOfferCallout.onCall(element.CreatedNode.LedgerIndex)
+						get_parent().onCall(element.CreatedNode.LedgerIndex)
 
 
 func _process(delta):
