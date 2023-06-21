@@ -5,23 +5,29 @@
 [node name="VBoxContainer" type="VBoxContainer"]
 anchor_left = 0.189453
 anchor_top = 0.165
-anchor_right = 0.810547
+anchor_right = 0.62207
 anchor_bottom = 0.835
+<<<<<<< Updated upstream
 script = ExtResource( 1 )
+=======
+margin_top = -1.0
+margin_bottom = -1.0
+>>>>>>> Stashed changes
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="Wallet Address Label" type="Label" parent="."]
-margin_right = 636.0
+margin_right = 443.0
 margin_bottom = 14.0
 text = "Input Wallet Address Below:"
 
 [node name="Wallet Address LineEdit" type="LineEdit" parent="."]
 margin_top = 18.0
-margin_right = 636.0
+margin_right = 443.0
 margin_bottom = 42.0
 
+<<<<<<< Updated upstream
 [node name="Wallet Stats Label" type="Label" parent="."]
 margin_top = 46.0
 margin_right = 636.0
@@ -32,6 +38,24 @@ text = "Wallet Stats"
 margin_top = 64.0
 margin_right = 636.0
 margin_bottom = 88.0
+=======
+[node name="Get Stats Button" type="Button" parent="."]
+margin_top = 46.0
+margin_right = 443.0
+margin_bottom = 66.0
+text = "Get Stats"
+
+[node name="Wallet Stats Label" type="Label" parent="."]
+margin_top = 70.0
+margin_right = 443.0
+margin_bottom = 84.0
+text = "Wallet Stats"
+
+[node name="Funds HBox" type="HBoxContainer" parent="."]
+margin_top = 88.0
+margin_right = 443.0
+margin_bottom = 112.0
+>>>>>>> Stashed changes
 
 [node name="Funds" type="Label" parent="Funds HBox"]
 margin_top = 5.0
@@ -46,9 +70,15 @@ margin_bottom = 24.0
 size_flags_horizontal = 3
 
 [node name="NFT Count HBox" type="HBoxContainer" parent="."]
+<<<<<<< Updated upstream
 margin_top = 92.0
 margin_right = 636.0
 margin_bottom = 116.0
+=======
+margin_top = 116.0
+margin_right = 443.0
+margin_bottom = 140.0
+>>>>>>> Stashed changes
 
 [node name="Number of NFTs" type="Label" parent="NFT Count HBox"]
 margin_top = 5.0
@@ -63,9 +93,15 @@ margin_bottom = 24.0
 size_flags_horizontal = 3
 
 [node name="Trustline Count HBox" type="HBoxContainer" parent="."]
+<<<<<<< Updated upstream
 margin_top = 120.0
 margin_right = 636.0
 margin_bottom = 144.0
+=======
+margin_top = 144.0
+margin_right = 443.0
+margin_bottom = 168.0
+>>>>>>> Stashed changes
 
 [node name="Number of Trustlines" type="Label" parent="Trustline Count HBox"]
 margin_top = 5.0
@@ -80,9 +116,15 @@ margin_bottom = 24.0
 size_flags_horizontal = 3
 
 [node name="isXUMMPro" type="HBoxContainer" parent="."]
+<<<<<<< Updated upstream
 margin_top = 148.0
 margin_right = 636.0
 margin_bottom = 172.0
+=======
+margin_top = 172.0
+margin_right = 443.0
+margin_bottom = 196.0
+>>>>>>> Stashed changes
 
 [node name="XUMM Pro Status" type="Label" parent="isXUMMPro"]
 margin_top = 5.0

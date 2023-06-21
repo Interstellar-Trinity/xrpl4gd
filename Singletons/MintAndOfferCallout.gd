@@ -9,10 +9,10 @@ func _ready():
 	_on_Button_pressed()
 	
 	
-func onCall(NFTokenOfferId):
+func onCall():
 	print("mint executing")
 	$HTTPRequest.connect("request_completed", self, "_on_request_completed")
-	Server.PlayerOfferNotification()
+	get_parent().PlayerOfferNotification()
 	#add in a popup letting the player know that the NFT is being minted
 
 func _on_request_completed(result, response_code, headers, body):
@@ -25,7 +25,7 @@ func _on_Button_pressed():
 	# Add 'Content-Type' header:
 	var headers = ["Content-Type: application/json"]
 	$HTTPRequest.request("http://localhost:8080/mintAndOffer", headers, true, HTTPClient.METHOD_POST, query)
-	Server.PlayerOfferNotification()
+
 
 func playerOfferAccept(NFTokenOfferId):
 	print("Im asking the player to accept the offer")
