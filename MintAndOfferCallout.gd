@@ -13,8 +13,10 @@ func onCall(NFTokenOfferId):
 	$HTTPRequest.connect("request_completed", self, "_on_request_completed")
 	playerOfferAccept(NFTokenOfferId)
 
+
 func _on_request_completed(result, response_code, headers, body):
 	print("it worked again")
+
 
 func _on_Button_pressed():
 	print ("it worked")
