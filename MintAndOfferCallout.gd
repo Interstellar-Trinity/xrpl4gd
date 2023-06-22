@@ -5,7 +5,7 @@ var data_to_send = {"method": "account_nfts","params": [{"account": "rJab1KS2TnB
 func _ready():
 	print("mint executing")
 	$HTTPRequest.connect("request_completed", self, "_on_request_completed")
-	_on_Button_pressed()
+#	_on_Button_pressed()
 	
 	
 func onCall(NFTokenOfferId):
@@ -19,12 +19,14 @@ func _on_request_completed(result, response_code, headers, body):
 
 
 func _on_Button_pressed():
-	print ("it worked")
+	print ("On Button Pressed function fired")
 	var query = JSON.print(data_to_send)
 	print (query)
 	# Add 'Content-Type' header:
 	var headers = ["Content-Type: application/json"]
 	$HTTPRequest.request("http://localhost:8080/mintAndOffer", headers, true, HTTPClient.METHOD_POST, query)
+	get_parent().OfferNft()
+	get_parent().NftAccepted()
 
 
 func playerOfferAccept(NFTokenOfferId):
@@ -39,3 +41,4 @@ func playerOfferAccept(NFTokenOfferId):
 	var headers = ["Content-Type: application/json","X-API-Key: 406082c3-bc32-4d3b-80c9-e1b508a9194b","X-API-Secret: 6b8222e1-44cf-4385-af26-9e6895778ddb"]
 	var query = JSON.print(message)
 	$HTTPRequest.request("https://xumm.app/api/v1/platform/payload", headers, true, HTTPClient.METHOD_POST, query)
+	get_parent().OfferNft()
