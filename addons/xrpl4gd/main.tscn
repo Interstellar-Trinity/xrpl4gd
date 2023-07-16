@@ -101,3 +101,9 @@ margin_top = 176.0
 margin_right = 636.0
 margin_bottom = 196.0
 text = "Get Stats"
+
+[node name="XUMM Sign In" type="Button" parent="."]
+margin_top = 200.0
+margin_right = 636.0
+margin_bottom = 220.0
+text = "XUMM Sign In"

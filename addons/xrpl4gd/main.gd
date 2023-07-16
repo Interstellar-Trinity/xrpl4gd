@@ -5,6 +5,7 @@ onready var address_input = get_node("Wallet Address LineEdit")
 
 func _ready():
 	$"Get Stats Button".connect("pressed", self, "_on_button_pressed")
+	$"XUMM Sign In".connect("pressed", self, "_xumm_sign_in")
 	
 func _on_button_pressed():
 	
@@ -38,3 +39,18 @@ func _on_button_pressed():
 	print(account_xumm_status)
 	
 	$"isXUMMPro/XUMM Pro LineEdit".text = String(parsedMessage.result.xummPro)
+
+func _xumm_sign_in():
+	print("Im asking XUMM for a sign in payload")
+	var http = HTTPRequest.new()
+	get_tree().root.add_child(http)
+	
+	var message = {}
+	message.txjson = {}
+	message.txjson.TransactionType = "SignIn"
+	var headers = ["Content-Type: application/json","X-API-Key: 406082c3-bc32-4d3b-80c9-e1b508a9194b","X-API-Secret: 6b8222e1-44cf-4385-af26-9e6895778ddb"]
+	var query = JSON.print(message)
+	http.request("https://xumm.app/api/v1/platform/payload", headers, true, HTTPClient.METHOD_POST, query)
+	var response = yield(http, "request_completed")
+	response = response[3].get_string_from_utf8()
+	print(response)

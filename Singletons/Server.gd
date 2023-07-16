@@ -48,7 +48,7 @@ remote func FetchPlayerStats():
 # This function is triggered by the player clicking the "Test Mint" button
 remote func MintNft():
 	var player_id = get_tree().get_rpc_sender_id()
-	print("Player " + str(player_id) + "requested NFT mint")
+	print("Player " + str(player_id) + " requested NFT mint")
 	get_node("MintAndOfferCallout")._on_Button_pressed()
 	
 

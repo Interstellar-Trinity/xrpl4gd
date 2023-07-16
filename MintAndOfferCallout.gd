@@ -25,8 +25,8 @@ func _on_Button_pressed():
 	# Add 'Content-Type' header:
 	var headers = ["Content-Type: application/json"]
 	$HTTPRequest.request("http://localhost:8080/mintAndOffer", headers, true, HTTPClient.METHOD_POST, query)
-	get_parent().OfferNft()
-	get_parent().NftAccepted()
+	#get_parent().OfferNft()
+	#get_parent().NftAccepted()
 
 
 func playerOfferAccept(NFTokenOfferId):
